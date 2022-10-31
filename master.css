@@ -1,0 +1,106 @@
+/*  1-ازاي نعمل ملف css
+2-ازاي ادي تنسيقات لعنصر معين لو p , div .... او لو class
+3- ازاي انسق واحد فيهم بس وازاي انسقهم كلهم مع بعض
+
+-----------------------------------------------------
+
+4- background-color   >>> rgb()
+background-image: url()
+background-repeat:repaet , norepeat repeat-x repeat-y
+backgound-attachment: scroll  fixed
+background-possition: left top ......20px 20px
+background-size : auto  cover  countain.
+
+-------------------------------------------------------
+
+padding  : top right bottom left
+margin : top right bottom left   >> auto >> to make it in center
+border-width: 10px;
+border-color: aqua;
+border-style: solid;
+outline
+
+
+
+
+*/
+ * {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(73, 69, 69);
+}
+.load {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+.load div {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    animation-name: turn;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.load .two {
+    animation-delay: .4s;
+}
+.load .three {
+    animation-delay: .8s;
+}
+@keyframes turn {
+    to {
+        opacity: .2;
+        transform: translateY(-20px);
+    }
+} 
+
+/* .main {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background-color: #eee;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.name{
+    border: none;
+    border-style: inset;
+    border-radius: 10px;
+    margin: 10px ;
+    margin-top: 20px;
+    border-color: rgba(99, 97, 97, 0.582);
+    width: 327px;
+    height: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.log {
+    border-radius: 10px;
+    margin: 10px ;
+    border-color: rgba(99, 97, 97, 0.582);
+    width: 327px;
+    height: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-color: #1877f2;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+h1{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    color: #1877f2;
+    font-size: 50px;
+} */
